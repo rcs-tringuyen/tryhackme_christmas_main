@@ -1,2 +1,5 @@
-# tryhackme_christmas_day1
-[Web Exploitation] A Christmas Crisis
+# [Web Exploitation] A Christmas Crisis
+
+## IP: 10.10.58.111
+
+## Cookie for Authentication
