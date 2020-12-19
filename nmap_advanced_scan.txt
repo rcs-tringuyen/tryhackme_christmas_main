@@ -1,0 +1,107 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-18 20:45 MST
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:45
+Completed Parallel DNS resolution of 1 host. at 20:45, 0.00s elapsed
+Initiating Connect Scan at 20:45
+Scanning 10.10.89.120 [1000 ports]
+Discovered open port 8080/tcp on 10.10.89.120
+Discovered open port 3389/tcp on 10.10.89.120
+Discovered open port 5357/tcp on 10.10.89.120
+Discovered open port 8009/tcp on 10.10.89.120
+Completed Connect Scan at 20:45, 13.30s elapsed (1000 total ports)
+Initiating Service scan at 20:45
+Scanning 4 services on 10.10.89.120
+Completed Service scan at 20:45, 11.57s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.89.120.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 3.93s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.84s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+Nmap scan report for 10.10.89.120
+Host is up, received user-set (0.19s latency).
+Scanned at 2020-12-18 20:45:07 MST for 30s
+Not shown: 996 filtered ports
+Reason: 996 no-responses
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: TBFC-WEB-01
+|   NetBIOS_Domain_Name: TBFC-WEB-01
+|   NetBIOS_Computer_Name: TBFC-WEB-01
+|   DNS_Domain_Name: tbfc-web-01
+|   DNS_Computer_Name: tbfc-web-01
+|   Product_Version: 10.0.17763
+|_  System_Time: 2020-12-19T03:45:33+00:00
+| ssl-cert: Subject: commonName=tbfc-web-01
+| Issuer: commonName=tbfc-web-01
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-12-11T21:55:21
+| Not valid after:  2021-06-12T21:55:21
+| MD5:   448e 9458 0bbc 4fd8 07eb b8ee d7bf b67a
+| SHA-1: 5f89 42eb 0aa9 0e26 fceb f2dc 8ac2 788b bb58 6d84
+| -----BEGIN CERTIFICATE-----
+| MIIC2jCCAcKgAwIBAgIQdOyASUFMiolLWTebvZTvuDANBgkqhkiG9w0BAQsFADAW
+| MRQwEgYDVQQDEwt0YmZjLXdlYi0wMTAeFw0yMDEyMTEyMTU1MjFaFw0yMTA2MTIy
+| MTU1MjFaMBYxFDASBgNVBAMTC3RiZmMtd2ViLTAxMIIBIjANBgkqhkiG9w0BAQEF
+| AAOCAQ8AMIIBCgKCAQEAxzgP1NAkKPW/wdTm82MdXZ5rbbevYmqZaO66d8RU5zbZ
+| HJyr0hsFwaLbVHWuePR/YtboIV++Z4IIm16mnICgFyhXdt2EhPVpZ3/YibdDW85x
+| tnuZ/qMTGEXgdFx3CyxG1H5MEQOL/d0MaJz0dGhQ8aJKSdfajlcOOO+W6sqOg0m0
+| 1fmcxgbZQ61xI+SjeEW0Xl2KvYJFcCrdQuP5+nTjGlCkOolgzU+eTL2VNyk0eXuy
+| PQQo3vE90lO39wgC3aEupbVPjXH4xFTlvin+HrghjL20G2zknbOsKx1qdsKb4VPa
+| JY4ldDUrMeHLlI0s5V9xJvsVSSw5IYu3DgGKiXIrYQIDAQABoyQwIjATBgNVHSUE
+| DDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAFQB
+| vtERBK87xF9r3hJmxiB0HibqpYEFVeuiUY2pG6bBcLPmKid2UlkiXO+7JyB/MLaO
+| OMQg7Pr1so19CNRFJs2EY+OqE+MsIcrv0UQst7EFHUnPsot8V79d5lFMa52YaFFE
+| 4k8B5OSUOASGQNItpQ1NIDKeNurGZWGUMoQDDb2qfKb7XdGW5ZJvJ/5+UdCp2qks
+| rX+wlXMqZ3kQ//QFjzoXlTVroPdLEOdZUzLetWfX9KjwIo3m0Ut/6Udg99dHTK4h
+| RB1xcNivQ+LiEUWTzDj+4xVqUet1NGnscSuPSFPcdHQxwshKnXhwe0II0tINQPib
+| /ZkFnqT+sQFrft5RViM=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2020-12-19T03:45:36+00:00; -1s from scanner time.
+5357/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+8009/tcp open  ajp13         syn-ack Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+8080/tcp open  http          syn-ack Apache Tomcat 9.0.17
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Apache Tomcat/9.0.17
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: -1s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:45
+Completed NSE at 20:45, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.12 seconds
