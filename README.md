@@ -1,4 +1,4 @@
-# [Network] Metasploit
+# [Network] Metasploit and CGI-BIN
 
 IP: 10.10.89.120
 
