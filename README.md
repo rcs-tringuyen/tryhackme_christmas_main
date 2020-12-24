@@ -8,3 +8,6 @@ Advent of Cyber 2:
 - I installed this using snapd, to run use `snap run remmina`
 - Used `ILspy` on Windows box
 
+- After decompling, you can see this ;)
+
+- ![alt text](https://github.com/rcs-tringuyen/tryhackme_christmas_day18/blob/main/thm_day18.PNG?raw=true)
