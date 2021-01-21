@@ -1,0 +1,8 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-21 22:13 MST
+Nmap scan report for 10.10.24.3
+Host is up (0.18s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+8000/tcp open  http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 19.94 seconds
